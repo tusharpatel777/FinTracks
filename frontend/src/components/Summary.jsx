@@ -1,6 +1,7 @@
 
 import { useContext } from 'react';
 import TransactionContext from '../context/TransactionContext.jsx'; // Ensure .jsx
+// import T
 
 function Summary() {
     const { transactions } = useContext(TransactionContext);

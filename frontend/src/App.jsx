@@ -3,12 +3,14 @@ import { Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext.jsx'; // <-- Import ThemeProvider
 import { AuthProvider } from './context/AuthContext.jsx';
 import { TransactionProvider } from './context/TransactionContext.jsx';
+// import { AuthProvider } from './context/AuthContext.jsx';
 
 import Header from './components/Header';
 import PrivateRoute from './components/PrivateRoute';
 import Dashboard from './pages/Dashboard';
 import Login from './pages/Login';
 import Register from './pages/Register';
+// import Header from './components/Header';
 
 function App() {
   return (
