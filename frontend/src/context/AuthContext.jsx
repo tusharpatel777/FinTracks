@@ -8,7 +8,7 @@ export const AuthProvider = ({ children }) => {
     const [token, setToken] = useState(localStorage.getItem('token'));
     const [loading, setLoading] = useState(true);
 
-    const API_URL = 'http://localhost:5000/api/users';
+    const API_URL = 'https://fintracks.onrender.com/api/users';
 
     useEffect(() => {
         if (token) {

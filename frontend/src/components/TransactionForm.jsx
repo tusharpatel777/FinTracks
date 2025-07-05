@@ -35,19 +35,19 @@ function TransactionForm() {
     };
 
     return (
-        // --- Updated Container ---
+      
         <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-            {/* --- Updated Heading --- */}
+           
             <h3 className="text-2xl font-bold border-b border-gray-200 dark:border-gray-700 pb-2 mb-4 text-gray-800 dark:text-gray-100">
                 Add New Transaction
             </h3>
             <form onSubmit={onSubmit}>
                 <div className="mb-4">
-                    {/* --- Updated Label --- */}
+                  
                     <label className="block text-gray-700 dark:text-gray-300 mb-2">Transaction Type</label>
                     <div className="flex space-x-4">
                         <label className="flex items-center cursor-pointer">
-                            {/* Note: The @tailwindcss/forms plugin is the best way to style forms, but this works without it. */}
+                           
                             <input
                                 type="radio"
                                 name="type"
@@ -56,7 +56,7 @@ function TransactionForm() {
                                 onChange={(e) => setType(e.target.value)}
                                 className="form-radio h-4 w-4 text-green-500 bg-gray-200 border-gray-300 focus:ring-green-500 dark:bg-gray-600 dark:border-gray-500"
                             />
-                            {/* --- Updated Span Text --- */}
+                           
                             <span className="ml-2 text-gray-700 dark:text-gray-300">Income</span>
                         </label>
                         <label className="flex items-center cursor-pointer">
@@ -68,7 +68,7 @@ function TransactionForm() {
                                 onChange={(e) => setType(e.target.value)}
                                 className="form-radio h-4 w-4 text-red-500 bg-gray-200 border-gray-300 focus:ring-red-500 dark:bg-gray-600 dark:border-gray-500"
                             />
-                            {/* --- Updated Span Text --- */}
+                            
                             <span className="ml-2 text-gray-700 dark:text-gray-300">Expense</span>
                         </label>
                     </div>
@@ -78,7 +78,7 @@ function TransactionForm() {
                     <label htmlFor="category" className="block text-gray-700 dark:text-gray-300">Category</label>
                     <input type="text" value={category} onChange={(e) => setCategory(e.target.value)}
                         placeholder="e.g., Salary, Food, Bills..."
-                        // --- Updated Input ---
+                    
                         className="w-full mt-1 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200 dark:placeholder-gray-400"
                         required
                     />
@@ -88,7 +88,7 @@ function TransactionForm() {
                     <label htmlFor="amount" className="block text-gray-700 dark:text-gray-300">Amount</label>
                     <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)}
                         placeholder="Enter amount..."
-                        // --- Updated Input ---
+                      
                         className="w-full mt-1 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200 dark:placeholder-gray-400"
                         required
                     />
@@ -98,7 +98,7 @@ function TransactionForm() {
                     <label htmlFor="description" className="block text-gray-700 dark:text-gray-300">Description (Optional)</label>
                     <input type="text" value={description} onChange={(e) => setDescription(e.target.value)}
                         placeholder="Add a note..."
-                        // --- Updated Input ---
+                       
                         className="w-full mt-1 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200 dark:placeholder-gray-400"
                     />
                 </div>

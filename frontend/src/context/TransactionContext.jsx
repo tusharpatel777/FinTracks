@@ -10,7 +10,7 @@ export const TransactionProvider = ({ children }) => {
     const [error, setError] = useState(null);
     const { token } = useContext(AuthContext);
 
-    const API_URL = 'http://localhost:5000/api/transactions';
+    const API_URL = 'https://fintracks.onrender.com/api/transactions';
 
     useEffect(() => {
         if (token) {

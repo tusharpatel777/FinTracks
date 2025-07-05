@@ -2,12 +2,12 @@
 import { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import AuthContext from '../context/AuthContext.jsx';
-import { useTheme } from '../context/ThemeContext.jsx'; // <-- Import the custom hook
+import { useTheme } from '../context/ThemeContext.jsx'; 
 import { FaSignOutAlt, FaUserPlus, FaSignInAlt, FaSun, FaMoon } from 'react-icons/fa';
 
 function Header() {
     const { user, logout } = useContext(AuthContext);
-    const { theme, toggleTheme } = useTheme(); // <-- Use the theme context
+    const { theme, toggleTheme } = useTheme();
     const navigate = useNavigate();
 
     const onLogout = () => {
