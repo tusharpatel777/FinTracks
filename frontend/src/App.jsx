@@ -5,7 +5,8 @@ import { AuthProvider } from './context/AuthContext.jsx';
 import { TransactionProvider } from './context/TransactionContext.jsx';
 // import { AuthProvider } from './context/AuthContext.jsx';
 
-import Header from './components/Header';
+// import Header from './components/Header';
+import Header from './components/header.jsx';
 import PrivateRoute from './components/PrivateRoute';
 import Dashboard from './pages/Dashboard';
 import Login from './pages/Login';

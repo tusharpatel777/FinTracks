@@ -1,6 +1,6 @@
 
 import { useContext } from 'react';
-import TransactionContext from '../context/TransactionContext.jsx'; // Ensure .jsx
+import TransactionContext from '../context/TransactionContext.jsx'; 
 
 function Balance() {
     const { transactions } = useContext(TransactionContext);
