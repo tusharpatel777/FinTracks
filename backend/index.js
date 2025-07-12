@@ -15,7 +15,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: 'https://fin-tracks-zml1-p7nx2j1pq-tusharpatel777s-projects.vercel.app',
+  origin: 'https://fin-tracks-zml1-211p8hyah-tusharpatel777s-projects.vercel.app/',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 })); 
