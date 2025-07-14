@@ -7,6 +7,7 @@ import { TransactionProvider } from './context/TransactionContext.jsx';
 
 
 // import Header from './components/Header';
+import Headers from './components/Headers.jsx';
 import PrivateRoute from './components/PrivateRoute';
 import Dashboard from './pages/Dashboard';
 import Login from './pages/Login';
@@ -21,7 +22,7 @@ function App() {
         <TransactionProvider>
           {/* Apply dark mode classes to the main background */}
           <div className="bg-slate-100 dark:bg-gray-900 min-h-screen text-gray-800 dark:text-gray-200">
-            <Header />
+            <Headers />
             <main className="container mx-auto px-4 py-8">
               <Routes>
                 <Route path="/login" element={<Login />} />
